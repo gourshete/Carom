@@ -40,8 +40,9 @@ class Play
   end
 
   def read_input
-    p1 = File.read('player_one_input.txt').split(',').map(&:to_i)
-    p2 = File.read('player_two_input.txt').split(',').map(&:to_i)
+    file_path = '/Users/swapnil/Learning/Carom'
+    p1 = File.read("#{file_path}/player_one_input.txt").split(',').map(&:to_i)
+    p2 = File.read("#{file_path}/player_two_input.txt").split(',').map(&:to_i)
     return p1, p2
   end
 

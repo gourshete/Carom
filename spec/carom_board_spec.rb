@@ -1,4 +1,4 @@
-require_relative 'carom_board'
+require_relative '../lib/carom_board'
 require 'pry'
 
 RSpec.describe CaromBoard do

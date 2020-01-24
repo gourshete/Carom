@@ -1,9 +1,10 @@
-require_relative 'play'
+require_relative '../lib/play'
 
 RSpec.describe Play do
 
   def write_to_file(player, moves)
-    File.open("player_#{player}_input.txt", 'w'){|file| file.write(moves)}
+    file_path = '/Users/swapnil/Learning/Carom'
+    File.open("#{file_path}/player_#{player}_input.txt", 'w'){|file| file.write(moves)}
   end
   context 'Check results' do
 

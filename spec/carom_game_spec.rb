@@ -1,4 +1,4 @@
-require_relative 'carom_game'
+require_relative '../lib/carom_game'
 
 RSpec.describe CaromGame do
 
@@ -17,12 +17,6 @@ RSpec.describe CaromGame do
 
     it "should check for carom board class" do
       expect(@game.carom_board.class.to_s).to eq('CaromBoard')
-    end
-  end
-
-  context 'Check methods return type' do
-    it "check_for_winner method should return boolean" do
-      expect(@game.check_for_winner.class.to_s).to eq('FalseClass')
     end
   end
 

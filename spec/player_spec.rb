@@ -1,5 +1,5 @@
 require 'pry'
-require_relative 'player'
+require_relative '../lib/player'
 
 RSpec.describe Player do
 
