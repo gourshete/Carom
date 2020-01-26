@@ -42,5 +42,26 @@ RSpec.describe Play do
       response = Play.new.run
       expect(response.nil?).to eq(true)
     end
+
+    it "Case 6" do
+      write_to_file('one','0,1,2,1,0,1,2')
+      write_to_file('two','1,1,4,1,0,1,0')
+      response = Play.new.run
+      expect(response).to eq(0)
+    end
+
+    it "Case 7" do
+      write_to_file('one','1,1,3,1,0,1,0')
+      write_to_file('two','0,1,2,1,0,4,2')
+      response = Play.new.run
+      expect(response).to eq(0)
+    end
+
+    it "Case 8" do
+      write_to_file('one','2,1,0,1,0,1,0')
+      write_to_file('two','1,1,0,1,0,4,2')
+      response = Play.new.run
+      expect(response).to eq(0)
+    end
   end
 end

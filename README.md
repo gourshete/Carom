@@ -12,10 +12,10 @@ Driver class
 Play
 
 Description:
-1. class Player represents entity Players and has methods to update its attributes. 
+1. class Player represents entity Player and has methods to update its attributes. 
 2. class CaromBoard represents entity Carom and has set of rules, methods to update attributes defined
 3. class CaromGame contains methods implementing mostly the logical part
-4. class Play is a driver class. It takes input from files and passes them to each iteration.
+4. class Play is a driver class. It takes input from files and passes them through each iteration.
 
 Unit tests
 1. Tests are written using ruby library rspec
